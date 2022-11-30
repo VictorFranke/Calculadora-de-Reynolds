@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples - Número de Reynolds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <header>
+        
+    </header>
+
+    <section>
+        <div id="'dados">
+            <h1>Tipo de escoamento</h1>
+            <h2>Insira os valores solicitados:</h2>
+
+            <p>Velocidade de escoamento (m/s): <input type="number" name="inicio" id="txt1"></p>
+            
+            <p>Diâmetro do tubo (mm): <input type="number" name="fim" id="txt2"></p>
+            <p>Viscosidade cinética do fluído (m²/s): <input type="number" name="fi" id="txt3">
+                <select id="operador_multiplicador">
+                    <option value="v-9">10⁽⁻⁹⁾</option>
+                    <option value="v-6">10⁽⁻⁶⁾</option>
+                    <option value="v-3">10⁽⁻³⁾</option>
+                </select>
+            </p>
+            <p>Rugosidade do Material [ε](mm): <input type="number" name="inicio" id="txt4"></p>
+            
+            <p>Selecione o método para calcular o número de Reynolds caso seja regime Turbulento:
+            <select id="operacao">
+                <option value="M1">Método de Churchill</option>
+                <option value="M2">Método de Chen</option>
+                <option value="M3">Método de Haaland</option>
+                <option value="M4">Método de Swamee-Jain</option>
+            </select>
+            </p>
+            <p> <input type="button" value="contar" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+            Resultado:
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Victor Franke</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
