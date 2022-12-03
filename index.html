@@ -29,18 +29,48 @@
             </p>
             <p>Rugosidade do Material [ε](mm): <input type="number" name="inicio" id="txt4"></p>
             
-            <p>Selecione o método para calcular o número de Reynolds caso seja regime Turbulento:
-            <select id="operacao">
-                <option value="M1">Método de Churchill</option>
-                <option value="M2">Método de Chen</option>
-                <option value="M3">Método de Haaland</option>
-                <option value="M4">Método de Swamee-Jain</option>
-            </select>
-            </p>
             <p> <input type="button" value="contar" onclick="calcular()"></p>
         </div>
         <div id="res">
             Resultado:
+        </div>
+
+        <div id="tabela_lin">
+            <table border="1">
+                <tr>
+                    <td>Método:</td>
+                    <td>Resultado (f):</td>
+                </tr>
+                <tr>
+                    <td>64/Re</td>
+                    <td id="linear"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="tabela_turb">
+            <table border="1">
+                <tr>
+                    <td>Método:</td>
+                    <td>Resultado (f):</td>
+                </tr>
+                <tr>
+                    <td>Churchill</td>
+                    <td id="churchill"></td>
+                </tr>
+                <tr>
+                    <td>Chenn</td>
+                    <td id="chenn"></td>
+                </tr>
+                <tr>
+                    <td>Halaand</td>
+                    <td id="halaand"></td>
+                </tr>
+                <tr>
+                    <td>Swamee_Jain</td>
+                    <td id="swamee_Jain"></td>
+                </tr>
+            </table>
         </div>
     </section>
 
