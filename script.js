@@ -41,7 +41,7 @@ function calcular(){
                 document.getElementById("tabela_turb").style.display = "none"
                 document.getElementById("tabela_lin").style.display = "block"
                 var f = 64/Re
-                Linear.innerHTML = f
+                Linear.innerHTML = f.toFixed(4)
             }
             if(Re>=2000 & Re<=10000){
 
@@ -62,10 +62,10 @@ function calcular(){
                 var f3 = (-0.782*Math.log((6.9/Re)+(r/(d*3.7))**(1.11)))**(-2)
                 var f4 = 0.25/((Math.log10((r/(d*3.7))+5.74/(Re**0.9)))**2)
 
-                Churchill.innerHTML = f1
-                Chenn.innerHTML = f2
-                Halaand.innerHTML = f3
-                Swamee_Jain.innerHTML = f4
+                Churchill.innerHTML = f1.toFixed(4)
+                Chenn.innerHTML = f2.toFixed(4)
+                Halaand.innerHTML = f3.toFixed(4)
+                Swamee_Jain.innerHTML = f4.toFixed(4)
             }
         }
 
@@ -81,7 +81,7 @@ function calcular(){
                 var f = 64/Re
                 document.getElementById("tabela_turb").style.display = "none"
                 document.getElementById("tabela_lin").style.display = "block"
-                Linear.innerHTML = f
+                Linear.innerHTML = f.toFixed(4)
             }
             if(Re>=2000 & Re<=10000){
                 document.getElementById("tabela_turb").style.display = "none"
@@ -101,10 +101,10 @@ function calcular(){
                 var f3 = (-0.782*Math.log((6.9/Re)+(r/(d*3.7))**(1.11)))**(-2)
                 var f4 = 0.25/((Math.log10((r/(d*3.7))+5.74/(Re**0.9)))**2)
             
-                Churchill.innerHTML = f1
-                Chenn.innerHTML = f2
-                Halaand.innerHTML = f3
-                Swamee_Jain.innerHTML = f4
+                Churchill.innerHTML = f1.toFixed(4)
+                Chenn.innerHTML = f2.toFixed(4)
+                Halaand.innerHTML = f3.toFixed(4)
+                Swamee_Jain.innerHTML = f4.toFixed(4)
 
             }
         }
@@ -121,7 +121,7 @@ function calcular(){
                 var f = 64/Re
                 document.getElementById("tabela_turb").style.display = "none"
                 document.getElementById("tabela_lin").style.display = "block"
-                Linear.innerHTML = f
+                Linear.innerHTML = f.toFixed(4)
             }
             if(Re>=2000 & Re<=10000){
                 document.getElementById("tabela_turb").style.display = "none"
@@ -141,10 +141,10 @@ function calcular(){
                 var f3 = (-0.782*Math.log((6.9/Re)+(r/(d*3.7))**(1.11)))**(-2)
                 var f4 = 0.25/((Math.log10((r/(d*3.7))+5.74/(Re**0.9)))**2)
             
-                Churchill.innerHTML = f1
-                Chenn.innerHTML = f2
-                Halaand.innerHTML = f3
-                Swamee_Jain.innerHTML = f4
+                Churchill.innerHTML = f1.toFixed(4)
+                Chenn.innerHTML = f2.toFixed(4)
+                Halaand.innerHTML = f3.toFixed(4)
+                Swamee_Jain.innerHTML = f4.toFixed(4)
             }
         }
     }
